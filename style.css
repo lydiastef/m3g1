@@ -1,0 +1,90 @@
+body, html {
+  height: 100%;
+}
+
+body { /*Everything is nested inside the body selector and some of the 
+  other selectors contain further nesting*/
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body #bg {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /*Got this from bennettfeely.com*/
+  background-color: #457b9d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1; /*Layering the bg to the text*/
+}
+body header a {
+  color: #1d3557;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  font-size: 30px;
+  margin-left: 50px;
+}
+body header a span {
+  color: #e63946; /*Part of the logo name becomes a different color*/
+}
+body main section#card {
+  background: #a8dadc;
+  padding: 20px;
+  margin: 4em auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 35%;
+}
+body main ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body main ul li {
+  margin-bottom: 10px;
+}
+body main ul li span { /*The little dots in the box*/
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #457b9d;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+body main ul li strong {
+  color: #1d3557;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+body section#primary {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+body section#primary h1 {
+  font-size: 3em;
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+body section#primary p {
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+body section#primary a {
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #1d3557;
+  display: block;
+  text-align: center;
+  margin: 70px auto 0 auto;
+  padding: 15px;
+  font-size: 25px;
+  width: 25%;
+}
+
+/*# sourceMappingURL=style.css.map */
